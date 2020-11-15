@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flight-Fare.co</title>
+	<link rel="stylesheet" href="static\css\styles.css">
+</head>
+
+<body bgcolor="pink">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">     
+        <a class="navbar-brand" href="\">FLIGHT PRICE</a>   	
+    </nav>
+
+    <p align="center" class="headings"><b>Flight Fare - Compare your flight fare here before you book tickets</b></p>
+
+<div class="prediction_form">
+<center>
+<form action="\predict" method="POST">   
+	<b class="b">Departure Date :</b>                           
+                 <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required"><br>
+
+    <b class="b">Arrival Date :</b>      
+                 <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+    
+	<b class="b">Source : </b>
+	<select id="inputs" name="Source" required="required"> 
+								<option value="Delhi">Delhi</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                        </select>
+    
+    <b class="b">Destination : </b>
+	<select id="inputs" name="Destination" required="required">
+								<option value="Cochin">Cochin</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="New Delhi">New Delhi</option>
+						</select>
+  
+    <b class="b">How many stops do you expect throught the journey?</b>
+	<select id="inputs" name="stops" required="required">
+								<option value="0">Non-Stop</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+						</select>
+					    
+    <b class="b">Which Airline you want to travel?</b>
+	<select id="inputs" name="airline" required="required">
+							<option value="Jet Airways">Jet Airways</option>
+                                <option value="IndiGo">IndiGo</option>
+                                <option value="Air India">Air India</option>
+                                <option value="Multiple carriers">Multiple carriers</option>
+                                <option value="SpiceJet">SpiceJet</option>
+                                <option value="Vistara">Vistara</option>
+                                <option value="Air Asia">Air Asia</option>
+                                <option value="GoAir">GoAir</option>
+                                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                                </option>
+                                <option value="Jet Airways Business">Jet Airways Business</option>
+                                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                                <option value="Trujet">Trujet</option>
+	 					</select>
+	<br><br>
+	<input type="submit" value="submit">
+
+</form>
+</center>
+
+<h1 align="center">{{ prediction_text }}</h3><br>
+<p>©2020 Surabhi Suresh</p><br>
+
+</div>
+</body>
+</html>
