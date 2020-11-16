@@ -5,4 +5,4 @@ A Procfile is a mechanism for declaring what commands are run by your applicatio
     pip freeze > requirements.txt   
 will return the requirements.txt file 
 
-This is ML model for flight-fare prediction, using flask and heroku.
+This is ML model for flight-fare prediction, using flask.
